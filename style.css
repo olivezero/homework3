@@ -1,10 +1,12 @@
-img{
-    float: left; 
+.container {
+    display: flex;
+}
 
-    width: 170*2px; 
-    height: 114*2px;
+.image {
+    width: 340px; 
+    height: 228px;
 
-    margin: 1em; 
+    margin: 5px; /* 부모의 폰트사이즈의 크기에 비례해서 증가. rem은 html 태그의 폰트 사이즈 크기에 비례. 그래서 왠만하면 px 쓸 것. 디자인 단위도 픽셀로 줌. */
     padding-right: 10px;
 }
 
@@ -28,7 +30,7 @@ h3{
     font-size: 20px;
     font-weight: 400;
     color: #1c1c1b;
-    line-height: 1.2;
+    line-height: 28px;
 
     overflow: hidden;
     text-overflow: ellipsis;
@@ -45,9 +47,10 @@ h4{
     padding-bottom: 10px;
 }
 
-
-/*뭘 패딩으로 하고 뭘 마진으로 하는지
+/* 뭘 패딩으로 하고 뭘 마진으로 하는지
 저거 싹 다 그룹 지정해 버리면 안 되나?
 그냥 1개만 만들고 2번은 복붙하면 안됨? 
 width h3할때 좌표 지정 못 함?
-h써 div써 이거 뭘 판단을 이게 뭐... */
+h써 div써 이거 판단을 무슨 기준으로 */
+
+/* float 대신 display flex로 하는 게 좋음 */
